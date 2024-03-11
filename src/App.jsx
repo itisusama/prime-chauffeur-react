@@ -6,6 +6,7 @@ import './assets/frontend/assets/css/style.css';
 import './assets/frontend/assets/css/owl.carousel.min.css';
 import Navbar from './components/Navbar';
 import Home from './Home';
+import Footer from './components/Footer';
 // import aos from 'aos';
 // import 'aos/dist/aos.css';
 
@@ -21,6 +22,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home/>} />
       </Routes>
+      <Footer/>
     </Router>
 
     <Helmet>
