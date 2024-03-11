@@ -1,10 +1,14 @@
 import React from 'react'
+import Hero from './components/Hero';
+import Homebanner from './components/Homebanner';
 
 const Home = () => {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <>
+      <Hero/>
+      {/* Cards */}
+      <Homebanner/>
+    </>
   )
 }
 
