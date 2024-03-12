@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Navbar = () => {
+  const [mobileNavActive, setMobileNavActive] = useState(false);
+
+  const toggleMobileNav = () => {
+    setMobileNavActive(!mobileNavActive);
+  };
+
+  const closeMobileNav = () => {
+    setMobileNavActive(false);
+  };
+
   return (
     <>
       {/* Desktop Navbar */}
@@ -52,16 +62,16 @@ const Navbar = () => {
           </div>
         </nav>
         <div className="pc-navbar-mobile-toggle">
-          <a href="#" id="pc-navbar-mobile-toggle">
+          <a href="#" id="pc-navbar-mobile-toggle" onClick={toggleMobileNav}>
             <i className="fa-solid fa-bars fa-2xl"></i>
           </a>
         </div>
       </section>
 
       {/* Mobile Navbar */}
-      <section className="pc-mobile-navbar bg-light" id="pc-mobile-navbar">
+      <section className={`pc-mobile-navbar bg-light ${mobileNavActive ? 'navbar-active' : ''}`} id="pc-mobile-navbar">
         {/* close */}
-        <div className="pc-mobile-navbar-close" id="pc-mobile-navbar-close">
+        <div className="pc-mobile-navbar-close" id="pc-mobile-navbar-close" onClick={closeMobileNav}>
           <i className="fa-solid fa-x"></i>
         </div>
 

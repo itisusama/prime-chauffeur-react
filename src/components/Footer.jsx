@@ -122,7 +122,6 @@ const Footer = () => {
       </div>
       {/* Copyright */}
     </footer>
-    // END:: Footer
     </>
   )
 }
