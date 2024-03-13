@@ -13,7 +13,6 @@ const Blog = () => {
       bannerText="Incididunt ut laboret dolore magna aliqua enim minim veniam nostrud ullamco laboris nisi aliquip ex loea."
       breadcrumb="Blog"
       showCarsBreadcrumb={false}
-      contactNumber="+44 1234 1232"
     /> 
     <section className="pc-blogs mt-4 mb-4 container-xl">
       <div className="row">

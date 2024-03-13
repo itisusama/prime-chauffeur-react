@@ -12,7 +12,6 @@ const About = () => {
       bannerText="Incididunt ut laboret dolore magna aliqua enim minim veniam nostrud ullamco laboris nisi aliquip ex loea."
       breadcrumb="About"
       showCarsBreadcrumb={false}
-      contactNumber="+44 1234 1232"
     />
     {/* <!-- START:: image and info --> */}
     <section className="container mt-4 mb-4">

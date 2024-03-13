@@ -11,6 +11,7 @@ import About from './About';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Blog from './Blog';
+import Contact from './Contact';
 
 const App = () => {
 
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/blog" element={<Blog/>} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
       <Footer/>
     </Router>
