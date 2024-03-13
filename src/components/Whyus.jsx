@@ -1,6 +1,54 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Whyus = () => {
+  const [counters, setCounters] = useState([
+    { start: 0, end: 232, duration: 1 },
+    { start: 0, end: 421, duration: 1 },
+    { start: 0, end: 1364, duration: 1 },
+    { start: 0, end: 42, duration: 1 }
+  ]);
+
+  useEffect(() => {
+    const updateCounters = () => {
+      const elements = document.querySelectorAll('.purecounter');
+
+      elements.forEach((element, index) => {
+        const { start, end, duration } = counters[index];
+        const counter = new PureCounter(element, start, end, duration);
+        counter.run();
+      });
+    };
+
+    updateCounters();
+  }, [counters]);
+
+  // PureCounter class for counter animation
+  class PureCounter {
+    constructor(element, start, end, duration) {
+      this.element = element;
+      this.start = start;
+      this.end = end;
+      this.duration = duration * 1000; // Convert seconds to milliseconds
+      this.startTime = null;
+      this.elapsedTime = null;
+    }
+
+    run() {
+      this.startTime = Date.now();
+      this.update();
+    }
+
+    update() {
+      this.elapsedTime = Date.now() - this.startTime;
+      if (this.elapsedTime >= this.duration) {
+        this.element.textContent = this.end;
+      } else {
+        const value = this.start + (this.end - this.start) * (this.elapsedTime / this.duration);
+        this.element.textContent = Math.floor(value);
+        requestAnimationFrame(this.update.bind(this));
+      }
+    }
+  }
   return (
     <>
       <section id="why-us">

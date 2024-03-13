@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Helmet} from "react-helmet";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './assets/frontend/assets/bootstrap/css/bootstrap.min.css';
@@ -8,13 +8,15 @@ import Navbar from './components/Navbar';
 import Home from './Home';
 import Footer from './components/Footer';
 import About from './About';
-// import aos from 'aos';
-// import 'aos/dist/aos.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Blog from './Blog';
 
 const App = () => {
-  // useEffect(() => {
-  //   aos.init({ duration: 1000 });
-  // }, []);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
@@ -24,6 +26,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/blog" element={<Blog/>} />
       </Routes>
       <Footer/>
     </Router>
