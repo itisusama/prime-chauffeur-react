@@ -1,5 +1,6 @@
 import React from 'react'
 import Banner from './components/Banner'
+import Icons from './components/Icons'
 
 const Contact = () => {
   return (
@@ -76,7 +77,13 @@ const Contact = () => {
   </div>
 </section>
 {/* <!-- END:: 3 info boxes --> */}
-{/* Service section component... will be added soon */}
+
+<section id='about'>
+  <div className="container" data-aos="fade-up">
+    <Icons/>
+  </div>
+</section>
+
 {/* <!-- START:: Map and Form --> */}
 <section className="pc-mapandform mt-4">
   <div className="row">
