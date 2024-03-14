@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from './components/Hero';
+import Carcards from './components/Carcards';
 import Homebanner from './components/Homebanner';
 import Whyus from './components/Whyus';
 import Newsletter from './components/Newsletter';
@@ -8,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Hero/>
-      {/* Cards */}
+      <Carcards/>
       <Homebanner/>
       {/* Services */}
       <Whyus/>

@@ -18,7 +18,7 @@ const CarCards = () => {
         <div className="item">
           {/* Card */}
           <div className="card" data-aos="fade-up" data-aos-delay="1000">
-            <img className="card-img-top" src={require('path-to-car1-image')} alt="Card image" style={{ width: '100%' }} />
+            <img className="card-img-top" src={'images/cars/car1.png'} alt="Card image" style={{ width: '100%' }} />
             {/* Price */}
             <div className="pc-carPriceBadge px-3 py-2"><span>From £200</span></div>
             {/* Price */}
@@ -40,7 +40,7 @@ const CarCards = () => {
         <div className="item">
           {/* Card */}
           <div className="card" data-aos="fade-down" data-aos-delay="1000">
-            <img className="card-img-top" src={require('path-to-car2-image')} alt="Card image" style={{ width: '100%' }} />
+            <img className="card-img-top" src={'images/cars/car2.png'} alt="Card image" style={{ width: '100%' }} />
             {/* Price */}
             <div className="pc-carPriceBadge px-3 py-2"><span>From £200</span></div>
             {/* Price */}
@@ -62,7 +62,7 @@ const CarCards = () => {
         <div className="item">
           {/* Card */}
           <div className="card" data-aos="fade-up" data-aos-delay="1000">
-            <img className="card-img-top" src={require('path-to-car3-image')} alt="Card image" style={{ width: '100%' }} />
+            <img className="card-img-top" src={'images/cars/car3.png'} alt="Card image" style={{ width: '100%' }} />
             {/* Price */}
             <div className="pc-carPriceBadge px-3 py-2"><span>From £200</span></div>
             {/* Price */}
