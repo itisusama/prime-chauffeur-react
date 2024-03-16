@@ -4,6 +4,7 @@ import Homebanner from './components/Homebanner';
 import Whyus from './components/Whyus';
 import Newsletter from './components/Newsletter';
 import CardSlider from './components/CardSlider';
+import Testimonial from './components/Testimonial';
 
 const Home = () => {
   return (
@@ -59,7 +60,7 @@ const Home = () => {
         </div>
       </div>
     </section>
-    {/* Testimonial */}
+    <Testimonial/>
     <Newsletter/>
     </>
   )
