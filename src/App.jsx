@@ -14,6 +14,8 @@ import Blog from './Blog';
 import Contact from './Contact';
 import Fleet from './Fleet';
 import AirportService from './AirportService';
+import Booking from './Booking';
+import SingleBlog from './SingleBlog';
 
 const App = () => {
 
@@ -33,6 +35,8 @@ const App = () => {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/fleet" element={<Fleet/>} />
         <Route path="/airport" element={<AirportService/>} />
+        <Route path="/booking" element={<Booking/>} />
+        <Route path="/single-blog" element={<SingleBlog/>} />
       </Routes>
       <Footer/>
     </Router>
