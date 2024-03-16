@@ -1,15 +1,15 @@
 import React from 'react'
 import Hero from './components/Hero';
-import Carcards from './components/Carcards';
 import Homebanner from './components/Homebanner';
 import Whyus from './components/Whyus';
 import Newsletter from './components/Newsletter';
+import CardSlider from './components/CardSlider';
 
 const Home = () => {
   return (
     <>
       <Hero/>
-      <Carcards/>
+      <CardSlider/>
       <Homebanner/>
       {/* Services */}
       <Whyus/>
