@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const [oneWayChecked, setOneWayChecked] = useState(false);
@@ -100,7 +101,7 @@ const Hero = () => {
                     </div>
                     {/* Date and Time */}
                     <div className="pc-hero-submit-btn d-flex justify-content-center" style={{ cursor: 'pointer' }} onClick={() => window.location.href='/booking'}>
-                      <button className="btn" onClick={() => window.location.href='/booking'}> Book Now </button>
+                    <button className="btn"><Link to='/booking' className='linkStyle'> Book Now</Link> </button>
                     </div>
                   </form>
                 </section>

@@ -15,7 +15,10 @@ body, html{
 
 // header
 @import 'components/hero';
-
+.linkStyle{
+  text-decoration: none;
+  color: $dark-textColor;
+}
 .item {
     margin: 2px;
   }

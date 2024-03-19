@@ -235,6 +235,11 @@ div[data-aos=zoom-in][data-aos-delay="800"] {
     padding: 0 10px !important;
   }
 }
+.linkStyle {
+  text-decoration: none;
+  color: #fff;
+}
+
 .item {
   margin: 2px;
 }
