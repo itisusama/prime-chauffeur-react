@@ -1,13 +1,12 @@
-import React from 'react';
-import ServicePageTemplate from './ServicePageTemplate';
+import React from 'react'
+import ServicePageTemplate from './ServicePageTemplate'
 
-function AirportService() {
-
+const Wedding = () => {
   return (
     <>
     <ServicePageTemplate
-    pageName='Airport Service'
-    breadCrumb='Airport'
+    pageName='Wedding Service'
+    breadCrumb='Wedding'
     paraOne='Incididunt ut laboret dolore magna aliqua enim minim veniam nostrud ullamco laboris nisi aliquip ex loea.'
     imageOne='images/cars/car2.png'
     headingOne='Take a look inside'
@@ -17,7 +16,7 @@ function AirportService() {
     cardImage='images/cars/car3.png'
     />
     </>
-  );
+  )
 }
 
-export default AirportService;
+export default Wedding

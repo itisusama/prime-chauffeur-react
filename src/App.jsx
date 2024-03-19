@@ -16,6 +16,7 @@ import Fleet from './Fleet';
 import AirportService from './AirportService';
 import Booking from './Booking';
 import SingleBlog from './SingleBlog';
+import Wedding from './Wedding';
 
 const App = () => {
 
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/fleet" element={<Fleet/>} />
         <Route path="/airport" element={<AirportService/>} />
+        <Route path="/wedding" element={<Wedding/>} />
         <Route path="/booking" element={<Booking/>} />
         <Route path="/single-blog" element={<SingleBlog/>} />
       </Routes>
