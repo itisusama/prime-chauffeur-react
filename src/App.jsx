@@ -17,9 +17,11 @@ import AirportService from './AirportService';
 import Booking from './Booking';
 import SingleBlog from './SingleBlog';
 import Wedding from './Wedding';
+import Events from './Events';
+import Business from './Business';
+import Tour from './Tour';
 
 const App = () => {
-
   useEffect(() => {
     AOS.init();
   }, []);
@@ -37,6 +39,9 @@ const App = () => {
         <Route path="/fleet" element={<Fleet/>} />
         <Route path="/airport" element={<AirportService/>} />
         <Route path="/wedding" element={<Wedding/>} />
+        <Route path="/events" element={<Events/>} />
+        <Route path="/business" element={<Business/>} />
+        <Route path="/tour" element={<Tour/>} />
         <Route path="/booking" element={<Booking/>} />
         <Route path="/single-blog" element={<SingleBlog/>} />
       </Routes>
