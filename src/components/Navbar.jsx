@@ -20,12 +20,12 @@ const Navbar = () => {
           {/* LOGO and Name */}
           <div className="pc-navbar-mobile-logo">
             <div className="pc-navbar-logo p-2">
-              <Link to="/home">
+              <Link to="/">
                 <i className="fa-solid fa-car"></i>
               </Link>
             </div>
             <div className="pc-navbar-name">
-              <Link to="/home">
+              <Link to="/">
                 <h5>Prime Chauffeur</h5>
               </Link>
             </div>
@@ -33,7 +33,7 @@ const Navbar = () => {
           {/* Items */}
           <div className="pc-navbar-list">
             <ul className="list-unstyled d-flex gap-1 align-items-center">
-              <li><b><Link to="/home">Home</Link></b></li>
+              <li><b><Link to="/">Home</Link></b></li>
               <li><Link to="/fleet" style={{ margin: '0 10px' }}>Our Fleet</Link></li>
               <li>
                 <div className="dropdown">
@@ -62,7 +62,7 @@ const Navbar = () => {
               </li>
               <li><Link to="/contact" style={{ marginRight: '10px' }}>Contact</Link></li>
               <li><Link to="/about" style={{ marginRight: '10px' }}>About</Link></li>
-              <li><button type="button" className="pc-navbar-booknow px-3" onClick={() => window.location.href = '/cars.html'}>Book Now</button></li>
+              <li><Link to='/fleet' className='linkStyle btn pc-navbar-booknow px-3'> Book Now</Link></li>
             </ul>
           </div>
         </nav>

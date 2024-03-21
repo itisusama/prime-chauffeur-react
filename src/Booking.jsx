@@ -66,7 +66,7 @@ const Booking = () => {
             <div className='mt-4'><img src={'images/cars/payment.png'} alt="Payment" /></div>
             {/* Hire Button */}
             <div className="pc-newsletter-btn mt-4">
-              <button className="btn px-5" onClick={() => window.location.href='/booking'}>Pay Now</button>
+            <Link to='/booking' className='linkStyle btn'> Pay Now</Link>
             </div>
             {/* END */}
           </div>

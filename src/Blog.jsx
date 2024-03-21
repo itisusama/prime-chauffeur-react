@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './components/Banner';
 import Right from './components/Right';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
   // Generating an array of length 6 to represent 6 cards
@@ -25,7 +26,7 @@ const Blog = () => {
               <div key={index} className="col-md-4 p-2">
                 {/* card */}
                 <div className="card" data-aos="fade-up" data-aos-delay="1000">
-                  <img onClick={() => window.location.href='/singleblog'} className="card-img-top img-fluid" src={`images/900x600/${index+1}.jpg`} alt="Card image" style={{ width: '100%' }} />
+                  <Link to='/single-blog'><img className="card-img-top img-fluid" src={`images/900x600/${index+1}.jpg`} alt="Card image" style={{ width: '100%' }} /></Link>
                   <div className="card-body">
                     <h5 className="card-title">Title Goes Here</h5>
                     <div className="d-flex gap-2">
@@ -35,7 +36,7 @@ const Blog = () => {
                     <p className="card-text small">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis recusandae sint similique!...
                       <div className="pc-newsletter-btn">
-                        <button onClick={() => window.location.href='/singleblog'} className="btn">Read More</button>
+                        <Link to='/single-blog' className='linkStyle btn'> Read More </Link>
                       </div>
                     </p>
                   </div>

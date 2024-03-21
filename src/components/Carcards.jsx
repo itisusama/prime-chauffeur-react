@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 const carCardsData = [
   { rent: '200', image: 'images/cars/car1.png' , carName: 'Mercedes',pessengers:'5',bags:'4'  },
   { rent: '200', image: 'images/cars/car2.png' , carName: 'Civic Honda',pessengers:'3',bags:'4'  },
@@ -37,7 +39,7 @@ const CarCards = () => {
             <span className="d-block"><i className="fa-solid fa-check"></i> {data.bags} Bags </span>
           </p>
           <div className="pc-newsletter-btn mt-4 mx-auto">
-            <button className="btn" onClick={() => window.location.href='/fleet'}>Book Now</button>
+              <Link to='/fleet' className='linkStyle btn'> Book Now</Link>
           </div>
         </div>
       </div>
