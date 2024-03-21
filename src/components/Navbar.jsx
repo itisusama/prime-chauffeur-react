@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [mobileNavActive, setMobileNavActive] = useState(false);
@@ -18,29 +19,33 @@ const Navbar = () => {
         <nav className="pc-desktop-navbar bg-body-tertiary px-5 py-2 d-flex justify-content-between">
           {/* LOGO and Name */}
           <div className="pc-navbar-mobile-logo">
-            <div className="pc-navbar-logo p-2" onClick={() => window.location.href = '/home'}>
-              <i className="fa-solid fa-car"></i>
+            <div className="pc-navbar-logo p-2">
+              <Link to="/home">
+                <i className="fa-solid fa-car"></i>
+              </Link>
             </div>
-            <div className="pc-navbar-name" onClick={() => window.location.href = '/home'}>
-              <h5>Prime Chauffeur</h5>
+            <div className="pc-navbar-name">
+              <Link to="/home">
+                <h5>Prime Chauffeur</h5>
+              </Link>
             </div>
           </div>
           {/* Items */}
           <div className="pc-navbar-list">
             <ul className="list-unstyled d-flex gap-1 align-items-center">
-              <li><b><a href="/home">Home</a></b></li>
-              <li><a href="/fleet" style={{ margin: '0 10px' }}>Our Fleet</a></li>
+              <li><b><Link to="/home">Home</Link></b></li>
+              <li><Link to="/fleet" style={{ margin: '0 10px' }}>Our Fleet</Link></li>
               <li>
                 <div className="dropdown">
                   <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Services
                   </button>
                   <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="/airport">Airport Transfers</a></li>
-                    <li><a className="dropdown-item" href="/wedding">Wedding</a></li>
-                    <li><a className="dropdown-item" href="/events">Events</a></li>
-                    <li><a className="dropdown-item" href="/business">Business</a></li>
-                    <li><a className="dropdown-item" href="/tours">Tours</a></li>
+                    <li><Link className="dropdown-item" to="/airport">Airport Transfers</Link></li>
+                    <li><Link className="dropdown-item" to="/wedding">Wedding</Link></li>
+                    <li><Link className="dropdown-item" to="/events">Events</Link></li>
+                    <li><Link className="dropdown-item" to="/business">Business</Link></li>
+                    <li><Link className="dropdown-item" to="/tours">Tours</Link></li>
                   </ul>
                 </div>
               </li>
@@ -50,13 +55,13 @@ const Navbar = () => {
                     Blog
                   </button>
                   <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="/singleblog">Single Blog</a></li>
-                    <li><a className="dropdown-item" href="/blog">All Blogs</a></li>
+                    <li><Link className="dropdown-item" to="/singleblog">Single Blog</Link></li>
+                    <li><Link className="dropdown-item" to="/blog">All Blogs</Link></li>
                   </ul>
                 </div>
               </li>
-              <li><a href="/contact" style={{ marginRight: '10px' }}>Contact</a></li>
-              <li><a href="/about" style={{ marginRight: '10px' }}>About</a></li>
+              <li><Link to="/contact" style={{ marginRight: '10px' }}>Contact</Link></li>
+              <li><Link to="/about" style={{ marginRight: '10px' }}>About</Link></li>
               <li><button type="button" className="pc-navbar-booknow px-3" onClick={() => window.location.href = '/cars.html'}>Book Now</button></li>
             </ul>
           </div>
@@ -77,14 +82,14 @@ const Navbar = () => {
 
         <div className="container pc-mobile-list">
           <ul className="list-unstyled">
-            <li><b><a className="btn" href="/home">Home</a></b></li>
+            <li><b><Link className="btn" to="/home">Home</Link></b></li>
             <li>
               <div className="dropdown">
                 <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Cars
                 </button>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="/cars.html">Our Cars</a></li>
+                  <li><Link className="dropdown-item" to="/cars.html">Our Cars</Link></li>
                 </ul>
               </div>
             </li>
@@ -94,11 +99,11 @@ const Navbar = () => {
                   Services
                 </button>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="/airport">Airport Transfers</a></li>
-                  <li><a className="dropdown-item" href="/wedding">Wedding</a></li>
-                  <li><a className="dropdown-item" href="/events">Events</a></li>
-                  <li><a className="dropdown-item" href="/business">Business</a></li>
-                  <li><a className="dropdown-item" href="/tours">Tours</a></li>
+                  <li><Link className="dropdown-item" to="/airport">Airport Transfers</Link></li>
+                  <li><Link className="dropdown-item" to="/wedding">Wedding</Link></li>
+                  <li><Link className="dropdown-item" to="/events">Events</Link></li>
+                  <li><Link className="dropdown-item" to="/business">Business</Link></li>
+                  <li><Link className="dropdown-item" to="/tours">Tours</Link></li>
                 </ul>
               </div>
             </li>
@@ -108,13 +113,13 @@ const Navbar = () => {
                   Blog
                 </button>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="/blog">All Blogs</a></li>
-                  <li><a className="dropdown-item" href="/singleblog">Single Blog</a></li>
+                  <li><Link className="dropdown-item" to="/blog">All Blogs</Link></li>
+                  <li><Link className="dropdown-item" to="/singleblog">Single Blog</Link></li>
                 </ul>
               </div>
             </li>
-            <li><a className="btn" href="/contact" style={{ marginRight: '10px' }}>Contact</a></li>
-            <li><a className="btn" href="/home" style={{ marginRight: '10px' }}>About</a></li>
+            <li><Link className="btn" to="/contact" style={{ marginRight: '10px' }}>Contact</Link></li>
+            <li><Link className="btn" to="/home" style={{ marginRight: '10px' }}>About</Link></li>
             <li><button type="button" className="pc-navbar-booknow px-3" onClick={() => window.location.href = '/cars.html'}>Book Now</button></li>
           </ul>
         </div>
@@ -124,4 +129,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
