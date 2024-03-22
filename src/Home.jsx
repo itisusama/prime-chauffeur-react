@@ -5,6 +5,7 @@ import Whyus from './components/Whyus';
 import Newsletter from './components/Newsletter';
 import CardSlider from './components/CardSlider';
 import Testimonial from './components/Testimonial';
+import ServiceCards from './components/ServiceCards';
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
       <Hero/>
       <CardSlider/>
       <Homebanner/>
-      {/* Services */}
+      <ServiceCards/>
       <Whyus/>
       <section className="pc-benaam bg-light p-4">
       {/* LOGO and Name */}
@@ -60,7 +61,6 @@ const Home = () => {
         </div>
       </div>
     </section>
-    {/* Service Cards */}
     <Testimonial/>
     <Newsletter/>
     </>

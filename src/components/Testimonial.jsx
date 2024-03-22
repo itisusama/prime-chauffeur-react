@@ -1,6 +1,38 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import $ from 'jquery';
 
 const Testimonial = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleNextClick = () => {
+      const carouselWidth = $(".carousel-inner")[0].scrollWidth;
+      const cardWidth = $(".carousel-item").width();
+
+      if (scrollPosition < carouselWidth - cardWidth * 4) {
+        setScrollPosition(scrollPosition + cardWidth);
+        $(".carousel-inner").animate({ scrollLeft: scrollPosition + cardWidth }, 600);
+      }
+    };
+
+    const handlePrevClick = () => {
+      const cardWidth = $(".carousel-item").width();
+
+      if (scrollPosition > 0) {
+        setScrollPosition(scrollPosition - cardWidth);
+        $(".carousel-inner").animate({ scrollLeft: scrollPosition - cardWidth }, 600);
+      }
+    };
+
+    $(".carousel-control-next").on("click", handleNextClick);
+    $(".carousel-control-prev").on("click", handlePrevClick);
+
+    return () => {
+      // Cleanup event listeners
+      $(".carousel-control-next").off("click", handleNextClick);
+      $(".carousel-control-prev").off("click", handlePrevClick);
+    };
+  }, [scrollPosition]);
   return (
     <>
       {/* START:: Testimonials */}

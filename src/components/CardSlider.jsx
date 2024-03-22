@@ -28,7 +28,6 @@ const CardSlider = () => {
       {isSmallScreen ? (
         <CarouselSmallScreen />
       ) : (
-        // Map over the array of props and render CarCards components
         <CarCards/>
       )}
     </div>

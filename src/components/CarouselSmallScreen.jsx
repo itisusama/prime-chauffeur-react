@@ -59,7 +59,7 @@ const CarCards = ({index,rent,carName,pessengers,bags}) => {
                     <span className="d-block"><i className="fa-solid fa-check"></i> {bags} Bags </span>
                   </p>
                   <div className="pc-newsletter-btn mt-4 mx-auto">
-                    <button className="btn" onClick={() => redirectToFleet()}>Book Now</button>
+                    <button className="btn">Book Now</button>
                   </div>
                 </div>
               </div>
@@ -70,9 +70,4 @@ const CarCards = ({index,rent,carName,pessengers,bags}) => {
       </section>
     </>
   );
-}
-
-// Function to handle redirection to the fleet page
-const redirectToFleet = () => {
-  window.location.href = '/fleet';
 }
