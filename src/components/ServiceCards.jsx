@@ -84,7 +84,7 @@ const ServiceCards = () => {
               <div className="card-body">
                 <h5 className="card-title">{service.title}</h5>
                 <p className="card-text">
-                  <small>{service.description}</small> <a href={service.route} className="text-red">Read More</a>
+                  <small>{service.description}</small> <Link to={service.route} className='text-red'>Read More</Link>
                 </p>
               </div>
             </div>
