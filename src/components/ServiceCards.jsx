@@ -12,12 +12,6 @@ const ServiceCards = () => {
       route: '/airport',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis recusandae sint similique!...'
     },
-    {
-        title: 'Airport Transfer',
-        imageSrc: 'images/900x600/1.jpg',
-        route: '/airport',
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis recusandae sint similique!...'
-      },
       {
         title: 'Wedding',
         imageSrc: 'images/900x600/2.jpg',
