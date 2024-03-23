@@ -11,7 +11,11 @@ const Home = () => {
   return (
     <>
       <Hero/>
-      <CardSlider/>
+      <CardSlider carCardsData = {[
+          { image :'images/cars/car1.png' , rent: '200', carName: 'Mercedes', passengers: '5', bags: '4' },
+          { image :'images/cars/car2.png' , rent: '200', carName: 'Civic Honda', passengers: '3', bags: '4' },
+          { image :'images/cars/car1.png', rent: '200', carName: 'Parado', passengers: '6', bags: '6' },
+        ]}/>
       <Homebanner/>
       <ServiceCards/>
       <Whyus/>

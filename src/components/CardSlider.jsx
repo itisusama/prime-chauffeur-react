@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CarouselSmallScreen from './CarouselSmallScreen';
 import CarCards from './CarCards';
 
-const CardSlider = () => {
+const CardSlider = ({carCardsData}) => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
@@ -26,9 +26,10 @@ const CardSlider = () => {
   return (
     <div>
       {isSmallScreen ? (
-        <CarouselSmallScreen />
+        <CarouselSmallScreen  carCardsData = {carCardsData}/>
       ) : (
-        <CarCards/>
+        // Map over the array of props and render CarCards components
+        <CarCards carCardsData = {carCardsData}/>
       )}
     </div>
   );
