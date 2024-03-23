@@ -100,7 +100,7 @@ const Hero = () => {
                       {/* Row */}
                     </div>
                     {/* Date and Time */}
-                    <div className="pc-hero-submit-btn d-flex justify-content-center" style={{ cursor: 'pointer' }} onClick={() => window.location.href='/booking'}>
+                    <div className="pc-hero-submit-btn d-flex justify-content-center" style={{ cursor: 'pointer' }}>
                    <Link to='/booking' className='linkStyle btn'> Book Now</Link>
                     </div>
                   </form>

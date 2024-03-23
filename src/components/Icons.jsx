@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Icons = () => {
   return (
@@ -18,19 +19,19 @@ const Icons = () => {
 
                     <div className="icon-box" data-aos="fade-up" data-aos-delay="800">
                     <div className="icon"><img src={'images/svg/card-checklist.svg'} alt="icon" /></div>
-                    <h4 className="title"><a href={'/about'}>Eiusmod Tempor</a></h4>
+                    <h4 className="title"><Link to='/about'>Eiusmod Tempor</Link></h4>
                     <p className="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
                     </div>
 
                     <div className="icon-box" data-aos="fade-up" data-aos-delay="800">
                     <div className="icon"><img src={'images/svg/brightness-high-fill.svg'} alt="icon" /></div>
-                    <h4 className="title"><a href={'/about'}>Magni Dolores</a></h4>
+                    <h4 className="title"><Link to='/about'>Magni Dolores</Link></h4>
                     <p className="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </div>
 
                     <div className="icon-box" data-aos="fade-up" data-aos-delay="800">
                     <div className="icon"><img src={'images/svg/calendar4-week.svg'} alt="icon" /></div>
-                    <h4 className="title"><a href={'/about'}>Dolor Sitema</a></h4>
+                    <h4 className="title"><Link to='/about'>Dolor Sitema</Link></h4>
                     <p className="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Banner from './components/Banner'
 import Right from './components/Right';
+import { Link } from 'react-router-dom';
 
 const SingleBlog = () => {
   const [name, setName] = useState('');
@@ -38,7 +39,7 @@ const SingleBlog = () => {
                     <div className="pc-dnc d-flex gap-3">
                         <span className="d-block p-2"><small><i className="fa-solid fa-calendar-days"></i> 12-January-2024</small></span>
                         <span className="d-block p-2"><small><i className="fa-solid fa-comment"></i> 999</small></span>
-                        <span className="d-block p-2"><small><i className="fa-solid fa-folder"></i> <a href="/blog" className="text-white" style={{ textDecoration: 'none' }}>Category Name</a></small></span>
+                        <span className="d-block p-2"><small><i className="fa-solid fa-folder"></i> <Link to='/blog' className="text-white" style={{ textDecoration: 'none' }}>Category Name</Link></small></span>
                     </div>
                     {/* (date posted, number of comments, category) */}
                     {/* Post */}
@@ -110,7 +111,7 @@ const SingleBlog = () => {
                             {/* End */}
                         </div>
                         {/* comments box */}
-                        <div className="d-flex justify-content-center"><a href="/blog" className="text-red">Read More</a></div>
+                        <div className="d-flex justify-content-center"><Link to='/blog' className="text-red">Read More</Link></div>
                     </div>
                     {/* Comments */}
                     {/* Post Comment */}

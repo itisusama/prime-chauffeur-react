@@ -33,7 +33,7 @@ const Fleet = () => {
           </div>
           {/* Hire Button */}
           <div className="pc-newsletter-btn my-4 mx-auto">
-            <button className="btn px-5" onClick={() => window.location.href='/booking'}>Book Now</button>
+          <Link to='/booking' className='linkStyle btn px-5'> Book Now</Link>
           </div>
           {/* End */}
         </div>
@@ -50,7 +50,7 @@ const Fleet = () => {
           </div>
           {/* Hire Button */}
           <div className="pc-newsletter-btn my-4 mx-auto">
-            <button className="btn px-5" onClick={() => window.location.href='/booking'}>Book Now</button>
+          <Link to='/booking' className='linkStyle btn px-5'> Book Now</Link>
           </div>
           {/* End */}
         </div>
@@ -72,7 +72,7 @@ const Fleet = () => {
           </div>
           {/* Hire Button */}
           <div className="pc-newsletter-btn my-4 mx-auto">
-            <button className="btn px-5" onClick={() => window.location.href='/booking'}>Book Now</button>
+          <Link to='/booking' className='linkStyle btn px-5'> Book Now</Link>
           </div>
           {/* End */}
         </div>

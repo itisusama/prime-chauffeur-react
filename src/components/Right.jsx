@@ -24,10 +24,10 @@ const Right = () => {
       <div className="mt-3 border py-2 px-4 pc-blog-category">
         <h4 className="text-red">Categories</h4>
         <ul className="list-unstyled">
-          <li><a href="#">Category 1</a></li>
-          <li><a href="#">Category 2</a></li>
-          <li><a href="#">Category 3</a></li>
-          <li><a href="#">Category 4</a></li>
+          <li><Link to='/blog'>Category 1</Link></li>
+          <li><Link to='/blog'>Category 2</Link></li>
+          <li><Link to='/blog'>Category 3</Link></li>
+          <li><Link to='/blog'>Category 4</Link></li>
         </ul>
       </div>
       {/* Categories */}

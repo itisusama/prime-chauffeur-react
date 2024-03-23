@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 const Faq = () => {
     useEffect(() => {
@@ -88,7 +89,7 @@ const Faq = () => {
                   </button>
                 </div>
                 <div id="faq2Collapse" className="collapse" aria-labelledby="faq2Header" data-parent="#livingRoomCollapse">
-                  <p>If you have any issues or complaints about your order, please contact our customer service team through our <a href="contact.html">contact page</a>. We will be happy to assist you.</p>
+                  <p>If you have any issues or complaints about your order, please contact our customer service team through our <Link to='/contact'>contact page</Link> . We will be happy to assist you.</p>
                 </div>
 
                 {/* Add more FAQ items as needed */}
@@ -216,7 +217,7 @@ const Faq = () => {
                   </button>
                 </div>
                 <div id="faqReturns1Collapse" className="collapse" aria-labelledby="faqReturns1Header" data-parent="#returnsCollapse">
-                  <p>Our return policy allows you to return items within 30 days of purchase. Please review our <a href="return-policy.html">return policy</a> for more details.</p>
+                  <p>Our return policy allows you to return items within 30 days of purchase. Please review our return policy for more details.</p>
                 </div>
 
                 {/* FAQ Item 2 - Refund Process */}

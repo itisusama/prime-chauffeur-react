@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Banner = ({ pageTitle, bannerText, breadcrumb, showCarsBreadcrumb, contactNumber, callUsButtonText }) => {
   return (
@@ -11,8 +12,8 @@ const Banner = ({ pageTitle, bannerText, breadcrumb, showCarsBreadcrumb, contact
         {/* Bread Crumb */}
         <div className="pc-banner-breadcrumb">
           <p className="text-white">
-            <a href="/">Home</a>
-            {showCarsBreadcrumb && <span> &gt; <a href="/fleet">Cars</a></span>}
+            <Link to='/' className='linkStyle'>Home</Link>
+            {showCarsBreadcrumb && <span> &gt; <Link to='/fleet' className='linkStyle'>Fleet</Link></span>}
             &gt; {breadcrumb}
           </p>
         </div>
@@ -20,7 +21,7 @@ const Banner = ({ pageTitle, bannerText, breadcrumb, showCarsBreadcrumb, contact
         {/* Call Us Button */}
         {contactNumber && callUsButtonText && (
           <div className="pc-contactus-btn px-4">
-            <a href={`tel:${contactNumber}`} className="btn text-white">{callUsButtonText}</a>
+            <Link to={`tel:${contactNumber}`} className="btn text-white">{callUsButtonText}</Link>
           </div>
         )}
         {/* Call Us Button */}

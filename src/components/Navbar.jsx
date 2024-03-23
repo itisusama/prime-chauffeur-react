@@ -120,7 +120,7 @@ const Navbar = () => {
             </li>
             <li><Link className="btn" to="/contact" style={{ marginRight: '10px' }}>Contact</Link></li>
             <li><Link className="btn" to="/home" style={{ marginRight: '10px' }}>About</Link></li>
-            <li><button type="button" className="pc-navbar-booknow px-3" onClick={() => window.location.href = '/cars.html'}>Book Now</button></li>
+            <li><Link to='/fleet' className='linkStyle btn pc-navbar-booknow px-3'> Book Now</Link></li>
           </ul>
         </div>
       </section>
