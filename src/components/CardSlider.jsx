@@ -10,7 +10,6 @@ const CardSlider = ({carCardsData}) => {
       setIsSmallScreen(window.innerWidth < 768); // Change the threshold according to your definition of "sm"
     };
 
-    // Initial check on mount
     handleResize();
 
     // Listen for window resize events
